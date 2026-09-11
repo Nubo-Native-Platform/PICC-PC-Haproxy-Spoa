@@ -57,7 +57,7 @@ graph LR
 
 | Component | Minimum Version | Recommended |
 | :--- | :--- | :--- |
-| **Go Runtime** (for source build) | Go 1.22 | Go 1.24+ |
+| **Go Runtime** (for source build) | Go 1.26 | Go 1.26+ |
 | **HAProxy** | HAProxy 2.4+ | HAProxy 2.8+ LTS |
 | **Container Engine** | Docker 24.0+ | Docker Engine 27+ / Podman 5+ |
 | **Kubernetes** | Kubernetes 1.28+ | Kubernetes 1.30+ |

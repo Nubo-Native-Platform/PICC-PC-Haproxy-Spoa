@@ -45,7 +45,7 @@ Adhering to Cloud Native Computing Foundation (CNCF) design principles:
 ## 2. Development Environment Setup
 
 ### Required Tools
-- **Go 1.22+** (Go 1.24+ recommended).
+- **Go 1.26+** (tested with Go 1.26+ and Go 1.27+).
 - **Docker** and **Docker Compose** for containerized testing.
 - **HAProxy 2.8+** (optional, for end-to-end SPOE integration tests).
 - **Git** configured with LF line endings (`core.autocrlf = input`).

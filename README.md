@@ -1,6 +1,6 @@
 # PICC-PC-Haproxy-Spoa
 
-[![Go Version](https://img.shields.io/badge/Go-1.24%2B-00ADD8?logo=go&logoColor=white)](https://golang.org/)
+[![Go Version](https://img.shields.io/badge/Go-1.26%2B-00ADD8?logo=go&logoColor=white)](https://golang.org/)
 [![HAProxy](https://img.shields.io/badge/HAProxy-SPOE%20v2-0284C7?logo=haproxy&logoColor=white)](https://www.haproxy.org/)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 [![CNCF Compliant](https://img.shields.io/badge/CNCF-Cloud%20Native-326CE5?logo=cncf&logoColor=white)](https://www.cncf.io/)
@@ -115,7 +115,7 @@ sequenceDiagram
 
 | Category | Component / Library | Version | Role / Description |
 | :--- | :--- | :--- | :--- |
-| **Runtime** | Go | `1.24+` | High-concurrency compiled systems language |
+| **Runtime** | Go | `1.26+` | High-concurrency compiled systems language |
 | **SPOP Engine** | `criteo/haproxy-spoe-go` | `v1.0.8` | Official HAProxy Stream Processing Offload Protocol engine |
 | **JSON Parser** | `tidwall/gjson` | `v1.18.0` | Fast, zero-allocation JSON extraction library |
 | **Container Base** | Alpine Linux | `3.21` | Lightweight, secure unprivileged container base |
@@ -126,7 +126,7 @@ sequenceDiagram
 ## Quick Start
 
 ### Prerequisites
-- [Go 1.22+](https://golang.org/dl/) (Go 1.24+ recommended)
+- [Go 1.26+](https://golang.org/dl/)
 - [Docker](https://docs.docker.com/get-docker/) & Docker Compose
 - [HAProxy 2.8+](https://www.haproxy.org/) (for end-to-end proxy integration)
 

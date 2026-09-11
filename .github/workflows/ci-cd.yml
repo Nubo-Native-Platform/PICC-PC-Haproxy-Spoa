@@ -18,13 +18,14 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v5
         with:
-          go-version: '1.24'
+          go-version: 'stable'
+          check-latest: true
           cache: true
 
       - name: Verify Go Module Dependencies
         run: |
           go mod verify
-          go mod tidy --diff
+          git diff --exit-code go.mod go.sum
 
       - name: Run Go Vet
         run: go vet ./...

@@ -1,0 +1,25 @@
+services:
+  haproxy-spoa:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: picc-pc-haproxy-spoa:latest
+    container_name: haproxy-spoa
+    ports:
+      - "9000:9000"
+      - "8080:8080"
+    environment:
+      - SPOA_PORT=:9000
+      - HEALTH_PORT=:8080
+      - AUTH_SERVICE_URL=${AUTH_SERVICE_URL:-http://localhost:8080/api/v1/auth/access}
+      - AUTH_TIMEOUT_SECONDS=${AUTH_TIMEOUT_SECONDS:-5}
+      - BYPASS_HOSTS=${BYPASS_HOSTS:-}
+      - BYPASS_ENV_IDS=${BYPASS_ENV_IDS:-MASTER}
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "-", "http://127.0.0.1:8080/healthz"]
+      interval: 15s
+      timeout: 3s
+      retries: 3
+      start_period: 5s

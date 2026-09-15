@@ -1,0 +1,57 @@
+# Binaries and build outputs
+/spoa
+/haproxy-spoa
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+bin/
+dist/
+out/
+
+# Test and coverage artifacts
+*.out
+*.test
+coverage.txt
+coverage.html
+profile.out
+
+# Go dependency directory
+vendor/
+
+# Log files
+*.log
+*.log.*
+
+# Secrets, local tokens, environment files and keys
+.env
+*.env
+*.env.local
+*.env.*.local
+!*.env.example
+*.pem
+*.key
+*.crt
+*.jks
+*.p12
+
+# IDEs and Editors
+.idea/
+*.iws
+*.iml
+*.ipr
+.vscode/
+*.code-workspace
+.project
+.settings/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
